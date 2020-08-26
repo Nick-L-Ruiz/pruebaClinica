@@ -52,7 +52,7 @@
                 
                 $url = explode("/", $_GET["url"]);
 
-                if ($url[0] == "inicio") {
+                if ($url[0] == "inicio" || $url[0] == "salir") {
 
                   include "modulos/".$url[0].".php";
 
@@ -66,22 +66,27 @@
 
                 echo"</div>";
 
-              }else if(isset($_GET["url"])){
+              } else if (isset($_GET["url"])){
 
-                  if($_GET["url"] == "seleccionar") {
-                      
+
+                    if ($_GET["url"] == "seleccionar"){
+
+
                       include "modulos/seleccionar.php";
 
 
-                  }else if($_GET["url"] == "ingreso-Secretaria"){
+                    }else if($_GET["url"] == "ingreso-Secretaria"){
 
-                      include "modulos/ingreso-Secretaria.php";
+
+                    include "modulos/ingreso-Secretaria.php";
+
 
                   }
 
-              }else{
-                include "modulos/seleccionar.php";
-              }
+                }else{
+
+                  include "modulos/seleccionar.php";
+               }
     
    
   ?>
