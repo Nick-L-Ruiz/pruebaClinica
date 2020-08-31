@@ -1,10 +1,10 @@
-  <header class="main-header">
+<header class="main-header">
     <!-- Logo -->
-    <a href="Vistas/index2.html" class="logo">
+    <a href="http://localhost/clinica/inicio" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>R</b>M</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Reserv</b>Medic</span>
+      <span class="logo-lg"><b>RESERV</b>MEDIC</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -18,30 +18,50 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          
-          
+        
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="Vistas/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+
+              <?php
+
+              if($_SESSION["foto"] == ""){
+
+                echo '<img src="http://localhost/clinica/Vistas/img/defecto.png" class="user-image" alt="User Image">';
+
+              }else{
+
+                echo '<img src="http://localhost/clinica/'.$_SESSION["foto"].'" class="user-image" alt="User Image">';
+
+              }
+
+              ?>
+
+              
+
+              <span class="hidden-xs"><?php echo $_SESSION["nombre"]; echo " "; echo $_SESSION["apellido"];  ?></span>
+
             </a>
             <ul class="dropdown-menu">
               
-              <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-primary btn-flat">Perfil</a>
+
+                  <?php
+
+                  echo '<a href="http://localhost/clinica/perfil-'.$_SESSION["rol"].'" class="btn btn-primary btn-flat">Perfil</a>';
+
+                  ?>
+                  
+
                 </div>
+
                 <div class="pull-right">
-                  <a href="salir" class="btn btn-danger btn-flat">Salir</a>
+                  <a href="http://localhost/clinica/salir" class="btn btn-danger btn-flat">Salir</a>
                 </div>
               </li>
             </ul>
           </li>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          
         </ul>
       </div>
     </nav>

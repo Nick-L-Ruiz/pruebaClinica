@@ -4,7 +4,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="Vistas/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="http://localhost/clinica/Vistas/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -33,8 +33,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="Vistas/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="Vistas/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="http://localhost/clinica/Vistas/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="http://localhost/clinica/Vistas/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
         <li class="treeview">

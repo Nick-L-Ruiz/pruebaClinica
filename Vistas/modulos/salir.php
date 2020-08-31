@@ -2,4 +2,7 @@
 
 session_destroy();
 
-echo '<script> window.location="seleccionar"; </script>';
+echo '<script>
+
+	window.location = "seleccionar";
+</script>';
